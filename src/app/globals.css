@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #C76D05;
+  --accent: #E89921;
 }
 
 @theme inline {
@@ -10,6 +12,32 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Primary color scale */
+  --color-primary-50: #fef7ed;
+  --color-primary-100: #fded d5;
+  --color-primary-200: #fbd9ab;
+  --color-primary-300: #f8c076;
+  --color-primary-400: #f4a03f;
+  --color-primary-500: #E89921;
+  --color-primary-600: #C76D05;
+  --color-primary-700: #a85f04;
+  --color-primary-800: #844a03;
+  --color-primary-900: #693c03;
+  --color-primary-950: #3d2202;
+  
+  /* Accent color scale */
+  --color-accent-50: #fef7ed;
+  --color-accent-100: #fded d5;
+  --color-accent-200: #fbd9ab;
+  --color-accent-300: #f8c076;
+  --color-accent-400: #f4a03f;
+  --color-accent-500: #E89921;
+  --color-accent-600: #C76D05;
+  --color-accent-700: #a85f04;
+  --color-accent-800: #844a03;
+  --color-accent-900: #693c03;
+  --color-accent-950: #3d2202;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +52,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Remove custom utility classes since we now have the full color scale */
