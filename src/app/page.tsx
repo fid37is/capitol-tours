@@ -289,7 +289,7 @@ const CapitolToursWebsite = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map(testimonial => (
                 <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md">
-                  <div className="flex items-center mb-4">
+                  <div className="flex items-center mb-6 gap-4">
                     <div className="relative w-full h-48">
                       <Image
                         src={testimonial.image}
@@ -719,7 +719,7 @@ const CapitolToursWebsite = () => {
             <div className="mt-12">
               <h3 className="text-xl font-semibold mb-6 text-center">Find Us</h3>
               <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-gray-600 text-center">Map error!!! <br/>update your plugins</span>
+                <span className="text-gray-600 text-center">Map error!!! <br />update your plugins</span>
               </div>
             </div>
           </div>
