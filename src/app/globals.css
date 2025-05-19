@@ -15,7 +15,7 @@
   
   /* Primary color scale */
   --color-primary-50: #fef7ed;
-  --color-primary-100: #fded d5;
+  --color-primary-100: #fdedd5;
   --color-primary-200: #fbd9ab;
   --color-primary-300: #f8c076;
   --color-primary-400: #f4a03f;
@@ -28,7 +28,7 @@
   
   /* Accent color scale */
   --color-accent-50: #fef7ed;
-  --color-accent-100: #fded d5;
+  --color-accent-100: #fdedd5;
   --color-accent-200: #fbd9ab;
   --color-accent-300: #f8c076;
   --color-accent-400: #f4a03f;
@@ -52,5 +52,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Remove custom utility classes since we now have the full color scale */
