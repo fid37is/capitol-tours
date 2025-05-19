@@ -199,14 +199,14 @@ const CapitolToursWebsite = () => {
 
               {/* Desktop Menu */}
               <div className="hidden md:flex space-x-6">
-                <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-primary-600">Home</button>
-                <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-primary-600">About</button>
-                <button onClick={() => scrollToSection('tours')} className="text-gray-700 hover:text-primary-600">Tours</button>
-                <button onClick={() => scrollToSection('accommodation')} className="text-gray-700 hover:text-primary-600">Accommodation</button>
-                <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-primary-600">Services</button>
-                <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-primary-600">Gallery</button>
-                <button onClick={() => scrollToSection('blog')} className="text-gray-700 hover:text-primary-600">Blog</button>
-                <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-primary-600">Contact</button>
+                <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600">Home</button>
+                <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600">About</button>
+                <button onClick={() => scrollToSection('tours')} className="text-gray-700 hover:text-blue-600">Tours</button>
+                <button onClick={() => scrollToSection('accommodation')} className="text-gray-700 hover:text-blue-600">Accommodation</button>
+                <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600">Services</button>
+                <button onClick={() => scrollToSection('gallery')} className="text-gray-700 hover:text-blue-600">Gallery</button>
+                <button onClick={() => scrollToSection('blog')} className="text-gray-700 hover:text-blue-600">Blog</button>
+                <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600">Contact</button>
               </div>
 
               {/* Mobile Menu Button */}
@@ -236,16 +236,16 @@ const CapitolToursWebsite = () => {
         </nav>
 
         {/* Hero Section */}
-        <section id="home" className="pt-16 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <section id="home" className="pt-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
           <div className="max-w-6xl mx-auto px-4 py-20">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">Explore. Experience. Enjoy.</h1>
               <p className="text-xl md:text-2xl mb-8">Discover the world with Capitol Hospitality & Tours - Your gateway to unforgettable adventures</p>
               <div className="space-x-4">
-                <button onClick={() => scrollToSection('booking')} className="bg-white hover:bg-gray-200 text-black px-8 py-3 rounded-lg font-semibold transition duration-300">
+                <button onClick={() => scrollToSection('booking')} className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold transition duration-300">
                   Book Now
                 </button>
-                <button onClick={() => scrollToSection('tours')} className="border-2 border-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition duration-300">
+                <button onClick={() => scrollToSection('tours')} className="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-semibold transition duration-300">
                   Explore Packages
                 </button>
               </div>
@@ -272,7 +272,7 @@ const CapitolToursWebsite = () => {
                     <h3 className="text-xl font-semibold mb-2">{tour.name}</h3>
                     <p className="text-gray-600 mb-4">{tour.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-primary-600">{tour.price}</span>
+                      <span className="text-2xl font-bold text-blue-600">{tour.price}</span>
                       <span className="text-gray-500">{tour.duration}</span>
                     </div>
                   </div>
@@ -308,7 +308,7 @@ const CapitolToursWebsite = () => {
                     </div>
                   </div>
                   <p className="text-gray-600 italic">&quot;{testimonial.review}&quot;</p>
-                  <p className="text-sm text-primary-600 mt-2">- {testimonial.tour}</p>
+                  <p className="text-sm text-blue-600 mt-2">- {testimonial.tour}</p>
                 </div>
               ))}
             </div>
@@ -328,19 +328,19 @@ const CapitolToursWebsite = () => {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Award className="w-6 h-6 text-primary-600 mr-3" />
+                    <Award className="w-6 h-6 text-blue-600 mr-3" />
                     <span>Licensed and certified tour guides</span>
                   </div>
                   <div className="flex items-center">
-                    <Shield className="w-6 h-6 text-primary-600 mr-3" />
+                    <Shield className="w-6 h-6 text-blue-600 mr-3" />
                     <span>Fully insured and bonded</span>
                   </div>
                   <div className="flex items-center">
-                    <Heart className="w-6 h-6 text-primary-600 mr-3" />
+                    <Heart className="w-6 h-6 text-blue-600 mr-3" />
                     <span>Personalized travel experiences</span>
                   </div>
                   <div className="flex items-center">
-                    <Users className="w-6 h-6 text-primary-600 mr-3" />
+                    <Users className="w-6 h-6 text-blue-600 mr-3" />
                     <span>Expert local knowledge</span>
                   </div>
                 </div>
@@ -392,7 +392,7 @@ const CapitolToursWebsite = () => {
                   key={category}
                   onClick={() => setSelectedTourCategory(category)}
                   className={`px-6 py-2 rounded-full transition duration-300 ₦{selectedTourCategory === category
-                  ? 'bg-primary-600 text-white'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   }`}
                 >
@@ -429,7 +429,7 @@ const CapitolToursWebsite = () => {
                       </div>
                       <div>
                         <span className="text-sm font-semibold text-gray-700">Price:</span>
-                        <p className="text-2xl font-bold text-primary-600">{tour.price}</p>
+                        <p className="text-2xl font-bold text-blue-600">{tour.price}</p>
                       </div>
                     </div>
                     <div className="mb-4">
@@ -450,7 +450,7 @@ const CapitolToursWebsite = () => {
                     </div>
                     <button
                       onClick={() => scrollToSection('booking')}
-                      className="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded transition duration-300"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300"
                     >
                       Book Now
                     </button>
@@ -473,7 +473,7 @@ const CapitolToursWebsite = () => {
                   key={location}
                   onClick={() => setSelectedAccommodationFilter(location)}
                   className={`px-4 py-2 rounded transition duration-300 ₦{selectedAccommodationFilter === location
-                  ? 'bg-primary-600 text-white'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                   }`}
                 >
@@ -515,8 +515,8 @@ const CapitolToursWebsite = () => {
                       </div>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span className="text-xl font-bold text-primary-600">{hotel.price}</span>
-                      <button className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded transition duration-300">
+                      <span className="text-xl font-bold text-blue-600">{hotel.price}</span>
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition duration-300">
                         Book Now
                       </button>
                     </div>
@@ -533,32 +533,32 @@ const CapitolToursWebsite = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Calendar className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <Calendar className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Travel Planning</h3>
                 <p className="text-gray-600">Complete itinerary planning tailored to your preferences and budget.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <MapPin className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Airport Pickup</h3>
                 <p className="text-gray-600">Convenient and reliable airport transfer services for all arrivals.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Users className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Business Travel</h3>
                 <p className="text-gray-600">Professional travel management for corporate clients and business trips.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Globe className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <Globe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Custom Tours</h3>
                 <p className="text-gray-600">Personalized tour experiences designed around your interests.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Camera className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <Camera className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Event Management</h3>
                 <p className="text-gray-600">Complete planning for group events, conferences, and special occasions.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Shield className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <Shield className="w-12 h-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Travel Insurance</h3>
                 <p className="text-gray-600">Comprehensive travel insurance options for peace of mind.</p>
               </div>
@@ -587,7 +587,7 @@ const CapitolToursWebsite = () => {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-semibold mb-2">{image.alt}</h3>
-                    <span className="inline-block px-3 py-1 bg-blue-100 text-primary-600 rounded-full text-sm">
+                    <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
                       {image.category}
                     </span>
                   </div>
@@ -619,7 +619,7 @@ const CapitolToursWebsite = () => {
                     <p className="text-gray-600 mb-4">{post.excerpt}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-sm text-gray-500">{post.date}</span>
-                      <button className="text-primary-600 hover:text-blue-800 font-semibold">Read More</button>
+                      <button className="text-blue-600 hover:text-blue-800 font-semibold">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -637,19 +637,19 @@ const CapitolToursWebsite = () => {
                 <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Phone className="w-5 h-5 text-primary-600 mr-3" />
+                    <Phone className="w-5 h-5 text-blue-600 mr-3" />
                     <span>+234 (803) 124-3242</span>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="w-5 h-5 text-primary-600 mr-3" />
+                    <Mail className="w-5 h-5 text-blue-600 mr-3" />
                     <span>admin@capitolhospitality.info</span>
                   </div>
                   <div className="flex items-center">
-                    <MapPin className="w-5 h-5 text-primary-600 mr-3" />
+                    <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                     <span>26 Omo Israel Street, Alimosho District, Lagos 30240</span>
                   </div>
                   <div className="flex items-center">
-                    <Clock className="w-5 h-5 text-primary-600 mr-3" />
+                    <Clock className="w-5 h-5 text-blue-600 mr-3" />
                     <span>Mon-Fri: 9AM-6PM, Sat-Sun: 10AM-4PM</span>
                   </div>
                 </div>
@@ -657,10 +657,10 @@ const CapitolToursWebsite = () => {
                 <div className="mt-8">
                   <h4 className="font-semibold mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
-                    <Facebook className="w-6 h-6 text-primary-600 cursor-pointer hover:text-blue-800" />
-                    <Instagram className="w-6 h-6 text-primary-600 cursor-pointer hover:text-blue-800" />
-                    <Youtube className="w-6 h-6 text-primary-600 cursor-pointer hover:text-blue-800" />
-                    <Twitter className="w-6 h-6 text-primary-600 cursor-pointer hover:text-blue-800" />
+                    <Facebook className="w-6 h-6 text-blue-600 cursor-pointer hover:text-blue-800" />
+                    <Instagram className="w-6 h-6 text-blue-600 cursor-pointer hover:text-blue-800" />
+                    <Youtube className="w-6 h-6 text-blue-600 cursor-pointer hover:text-blue-800" />
+                    <Twitter className="w-6 h-6 text-blue-600 cursor-pointer hover:text-blue-800" />
                   </div>
                 </div>
               </div>
@@ -672,25 +672,25 @@ const CapitolToursWebsite = () => {
                     <input
                       type="text"
                       placeholder="First Name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                     <input
                       type="text"
                       placeholder="Last Name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                   />
                   <input
                     type="tel"
                     placeholder="Phone Number"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                   />
-                  <select title='select' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600">
+                  <select title='select' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
                     <option value="">Select Service Interest</option>
                     <option value="adventure">Adventure Tours</option>
                     <option value="family">Family Tours</option>
@@ -702,11 +702,11 @@ const CapitolToursWebsite = () => {
                   <textarea
                     rows={5}
                     placeholder="Your Message"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                   ></textarea>
                   <button
                     type="submit"
-                    className="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded transition duration-300 flex items-center justify-center"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition duration-300 flex items-center justify-center"
                   >
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
@@ -734,7 +734,7 @@ const CapitolToursWebsite = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Select Tour Package</label>
-                    <select title='choose-tour' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600">
+                    <select title='choose-tour' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
                       <option value="">Choose a tour...</option>
                       {tours.map(tour => (
                         <option key={tour.id} value={tour.id}>
@@ -745,7 +745,7 @@ const CapitolToursWebsite = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Number of Travelers</label>
-                    <select title='persons' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600">
+                    <select title='persons' className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
                       <option value="1">1 Person</option>
                       <option value="2">2 People</option>
                       <option value="3">3 People</option>
@@ -760,14 +760,14 @@ const CapitolToursWebsite = () => {
                     <label className="block text-sm font-medium text-gray-700 mb-2">Departure Date</label>
                     <input
                       type="date"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Return Date (Optional)</label>
                     <input
                       type="date"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                 </div>
@@ -778,7 +778,7 @@ const CapitolToursWebsite = () => {
                     <input
                       type="text"
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                   <div>
@@ -786,7 +786,7 @@ const CapitolToursWebsite = () => {
                     <input
                       type="email"
                       placeholder="your.email@example.com"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                 </div>
@@ -797,7 +797,7 @@ const CapitolToursWebsite = () => {
                     <input
                       type="tel"
                       placeholder="+1 (555) 123-4567"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                   <div>
@@ -805,7 +805,7 @@ const CapitolToursWebsite = () => {
                     <input
                       type="text"
                       placeholder="Country"
-                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                      className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                     />
                   </div>
                 </div>
@@ -815,7 +815,7 @@ const CapitolToursWebsite = () => {
                   <textarea
                     rows={4}
                     placeholder="Any dietary restrictions, accessibility needs, or special requests..."
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
                   ></textarea>
                 </div>
 
@@ -823,16 +823,16 @@ const CapitolToursWebsite = () => {
                   <input
                     type="checkbox"
                     id="terms"
-                    className="h-4 w-4 text-primary-600 focus:ring-blue-500 border-gray-300 rounded"
+                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                   />
                   <label htmlFor="terms" className="ml-2 block text-sm text-gray-700">
-                    I agree to the <a href="#" className="text-primary-600 hover:text-blue-800">Terms & Conditions</a> and <a href="#" className="text-primary-600 hover:text-blue-800">Privacy Policy</a>
+                    I agree to the <a href="#" className="text-blue-600 hover:text-blue-800">Terms & Conditions</a> and <a href="#" className="text-blue-600 hover:text-blue-800">Privacy Policy</a>
                   </label>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition duration-300"
                 >
                   Submit Booking Request
                 </button>
@@ -840,7 +840,7 @@ const CapitolToursWebsite = () => {
 
               <div className="mt-8 p-4 bg-blue-50 rounded-lg">
                 <h3 className="font-semibold text-blue-800 mb-2">Booking Information</h3>
-                <ul className="text-sm text-primary-700 space-y-1">
+                <ul className="text-sm text-blue-700 space-y-1">
                   <li>• Booking confirmation will be sent within 24 hours</li>
                   <li>• Payment can be made via credit card, bank transfer, or PayPal</li>
                   <li>• Full refund available up to 48 hours before departure</li>
@@ -875,7 +875,7 @@ const CapitolToursWebsite = () => {
         </section>
 
         {/* Newsletter Signup */}
-        <section className="py-16 bg-primary-600 text-white">
+        <section className="py-16 bg-blue-600 text-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">Stay Updated with Our Latest Offers</h2>
             <p className="text-xl mb-8">Subscribe to our newsletter for exclusive deals and travel inspiration</p>
@@ -885,7 +885,7 @@ const CapitolToursWebsite = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400"
               />
-              <button className="bg-white hover:bg-gray-200 text-black px-6 py-3 rounded font-semibold transition duration-300">
+              <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded font-semibold transition duration-300">
                 Subscribe
               </button>
             </div>
